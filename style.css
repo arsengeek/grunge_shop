@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap');
+@media screen and (max-width: 767px) {}
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Amatic SC', sans-serif; 
+    user-select: none;
+    background-color:black;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.header {
+    width: 100%;
+    background-image: url("assets/kombik_guitar-6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 16vh;
+    position: absolute;
+
+    
+    top: 0vh;
+    bottom: 0vh;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: name 60s infinite;
+}
+.img {
+    display:inline-block ;
+    width: 50%;
+    height: 50%;
+    transform: rotate(-30deg);
+    margin: 10vh auto;
+
+    transition: .3s ease-in-out;
+}
+.img:hover {
+    filter:
+    drop-shadow(.01vh .01vh 10vh rgb(175, 175, 175) )
+}
+.white_block {
+    width: 600px;
+    height: 350px;
+    position:fixed;
+    top:35%;
+    right:12vh;
+    z-index: 1;
+    border: 7px solid rgb(133, 132, 132);
+    box-shadow:5vh 3vh 2vh rgb(0, 0, 0);
+    animation: nev_name 60s infinite;
+    transition: .5s ease-in-out;
+    background-color:rgb(175, 175, 175);
+}
+.custom-button {
+    background-color: black;
+    color:#fff;
+    padding: 5% 20%;
+    margin-top: 1%;
+    border-radius: 30% ;
+    cursor: pointer;
+    font-size: 50%;
+    text-decoration: none;
+
+    transition: .3s ease-in-out;
+}
+.custom-button:hover {
+    padding: 5.5% 22%;
+}
+.text_in_block {
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+#ph {
+    font-weight: 400%;
+    margin: 5% auto;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10% ;
+    user-select: none;
+    background-color: black;
+    width: 100%;
+    height: 16vh;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.); /* Цвет и прозрачность фона */
+    z-index: -1; /* Помещаем слой под контент */
+}
+.header__inner.scrolled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10% ;
+    user-select: none;
+    background-color: black;
+    width: 100%;
+    height: 16vh;
+}
+.logo {
+    margin-top: 0%;
+    margin-left: 3%;
+    font-size: 5em;
+    font-weight: 700;
+    color: #fff;
+}
+.nav {
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+.nav__a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5vw;
+    color: black;
+    text-decoration: none;
+    border-bottom: .3vh solid transparent;
+
+    transition: color .2s linear ;
+    border-color: .2s linear;
+}
+.nav__a:hover {
+    color:blueviolet;
+    border-bottom:.3vh solid blueviolet ;
+
+}
+.sup_text {
+    font-size: 35px;
+    color: rgb(70, 219, 70);
+    text-shadow: 
+        -0.5px -1px 0 #000, 
+        .5px -1px 0 #000,  
+        -0.5px 1px 0 #000,  
+        .5px 1px 0 #000;   
+}
+.sale_up {
+    position: relative;
+    bottom:25vw ;
+    margin-left: 20vw;
+    font-size: 3.5vw;
+    transform:rotate(30deg);
+    -o-transform: rotate(30deg);
+    background-color: #5f0043;
+    text-align: center;
+    width: 10%;
+
+    transition: 0.5s ease-in-out;
+}
+.sale_up:hover {
+    width: 12%;
+    filter:drop-shadow(2px 2px 5px #5f0043)
+}
+.efects {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200vw;
+    background-image: url("assets/new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10em);
+    filter:drop-shadow(0px 25px 400px #1c2e20);
+}
+.efects_text {
+    font-size: 5vw;
+}
+.img_text1 {   
+    position: flex;
+    max-width: 64%;
+    text-align: center;
+    margin-left: 40vw ;
+    margin-right: 1vw;
+    font-size: 3vw;
+    background-color: #000;
+    margin-top: 20vw;
+    border-radius: 10%;
+}
+.img_dist {
+    display: fixed;
+
+    text-shadow: 
+    -2px -1px 0 #db6a00, 
+    2px -1px 0 #db6a00,  
+    2px 1px 0 #db6a00,  
+    2px 1px 0 #db6a00;
+}
+.img_distortion {
+    max-width: 25%;
+    height: auto;
+    position: absolute;
+    top: 6vw;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    margin: 10vw;
+    
+
+    filter:drop-shadow(0px 10px 15px #522e0c);
+}
+.img_text {
+    position:flex;
+    max-width: 64%;
+    text-align:center;
+    margin-right: 19vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+    background-color: #000;
+    border-radius: 10%;
+}
+.slider {
+    display: inline-block;
+
+}
+.slider__item {
+    width: 24%;
+
+    font-size: 200%;
+    text-align: center;
+    text-decoration: overline;
+}
+.section {
+    padding: 0vh 0;
+    background-image: url("assets/folder1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.catalog {
+    width: 100%;
+    margin-top: 80vh;
+    font-size: 2vw;
+    text-align: center;
+    justify-content:space-between ;
+}
+.text__catalog {
+    font-size: 500%;
+    margin-top: 10vw
+}
+.text_merch {
+    display: fixed;
+    margin-top: 10vw;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.img_merch {
+    position:flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37vw;
+}
+.img_merch3 {
+    position:absolute;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 67vw;
+    transition: .5s ease-in-out;
+    top:27%
+}
+.img_merch1 {
+    position:flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-left: 7vw;
+}
+.img_merch4 {
+    position: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 10vh;
+    opacity: 0.8;
+}
+.money1 {
+    position: relative;
+    text-align: center;
+    font-size: 3vw;;
+    width: 10%;
+    margin-left:45.3vw;
+
+    color:rgb(70, 219, 70);
+    background-color: #009657;
+    border-radius: 10%;
+}
+.money3 {
+    position: absolute;
+    text-align: center;
+    font-size: 3vw;;
+    width: 10%;
+    margin-left:74.6vw;
+    top:43%;
+
+
+    color:rgb(70, 219, 70);
+    background-color: #009657;
+    border-radius: 10%;
+}
+.money3:hover {
+    filter: drop-shadow(2px 2px 5px green);
+}
+.money1:hover {
+    filter: drop-shadow(2px 2px 5px green);
+}
+.money2 {
+    position: relative;
+    text-align: center;
+    font-size: 3vw;;
+    width: 10%;
+    margin-left:14.3vw;
+
+
+    color:rgb(70, 219, 70);
+    background-color: #009657;
+    border-radius: 10%;
+    text-decoration: none;
+}
+.sale_up p span {
+    color:rgb(255, 183, 0)
+}
+.money2:hover {
+    filter: drop-shadow(2px 2px 5px green);
+}
+
+.new__ {
+    position:absolute;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 900;
+    color:#009657;
+    background-color: transparent;
+    width: 10%;
+    margin-left: 74.4vw;
+    top: 33%;
+    transition: .5s ease-in-out;
+
+    text-shadow: 
+    -2px -1px 0 #a142f5,
+     2px -1px 0 #a142f5,
+    -2px  1px 0 #a142f5,
+     2px  1px 0 #a142f5;
+
+     filter:drop-shadow(0px 0px 50px green)
+}
+
+.new__:hover {
+    opacity: 0;
+    font-size: 7vw;
+    filter:drop-shadow(0px 0px 40px green);
+}
+.top_buy {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    width: 10%;
+    font-size: 3vw;
+    bottom:20vw;
+    margin-left: 40vw;
+    color: red;
+
+    filter:drop-shadow( 0px 0px 9px red)
+}
+.img_drive {
+    display:fixed;
+    
+    text-shadow: 
+    2px 1px 0 #ffee00, 
+    2px 1px 0 #ffee00,  
+    2px 1px 0 #ffee00  
+    -2px -1px 0 #ffee00;
+}
+.img_delay {
+    display:fixed;
+}
+.img_delay_ {
+    max-width: 19%;
+    height: auto;
+    position: absolute;
+    top:90vw;
+    right: 7.5%;
+
+    filter:drop-shadow(0px 10px 15px #5f0043);
+}
+.img_overdrive {
+    max-width: 26%;
+    height: auto;
+    position: absolute;
+    top: 45vw;
+    right: 60%;
+    left: 0;
+    bottom: 0;
+    margin: 6vw;
+
+    filter:drop-shadow(0px 10px 10px #f3d83f);
+}
+.img_text2 {
+    position: flex;
+    max-width: 64%;
+    text-align: center;
+    margin-right: 19vw;
+    margin-top: 30vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+    background-color: #000;
+    border-radius: 10% ;
+}
+.img_corus {
+    display: fixed;
+}
+.img_cor {
+    max-width: 30%;
+    height: auto;
+    position: absolute;
+    top: 130vw;
+    right: 0%;
+    left: 0;
+    bottom: 0;
+    margin: 0vw;
+
+    filter: drop-shadow(0px 10px 15px #009cc4);
+}
+.img_text3 {
+    text-align: center;
+    position: flex;
+    max-width: 64%;
+    font-size: 3vw;
+    margin-left: 35vw;
+    margin-top: 34vw;
+    margin-right: 1vw;
+    background-color: #000;
+    border-radius: 10%;
+}
+.img_tremo {
+    display:fixed
+}
+.img_tremmolo {
+    max-width: 24%;
+    position: absolute;
+    margin-top:  4vw;
+    margin-left: 20vw;
+
+    filter: drop-shadow(0px 10px 15px #009657)
+}
+.img_text4 {
+    position:flex;
+    text-align: center;
+    max-width: 64%;
+    margin-top: 30vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+    background-color: #000;
+    border-radius: 10%;
+}
+.space {
+    width: 100%;
+    position: absolute;
+    background-image: url("assets/folder.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190vw;
+    margin-top: 200vw;
+    justify-content: center;
+    z-index: -1;
+}
+.p {
+    text-align: center;
+    position:flex;;
+    font-size: 10vw;
+    margin-bottom: 100vw;
+    margin-top: 10vw;
+}
+@keyframes name {
+    0%{
+        filter:drop-shadow(.07vh .04vh 90vh  #35577c);
+        background-image: url("assets/kombik_guitar-6.png");
+    }
+    33%{
+        filter: blur(0.5);
+        filter:drop-shadow(.07vh .04vh 70vh #54483a);
+        background-image: url("assets/45ba841f92124e9abd2695cdd60f.jpg");
+    }
+    66%{
+        filter:drop-shadow(.07vh .04vh 70vh white);
+        background-image: url("assets/dsc-9442.jpg");
+    }
+    100% {
+        filter:drop-shadow(.07vh .04vh 90vh #35577c);
+        background-image: url("assets/kombik_guitar-6.png");
+    }
+}
+@keyframes header {
+    0% {
+        opacity: 0;
+        top:-100px
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}

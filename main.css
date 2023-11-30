@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap');
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Amatic SC', sans-serif; 
+    user-select: none;
+    background-color:black;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.header {
+    width: 100%;
+    background-image: url("assets/kombik_guitar-6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 16vh;
+    position: absolute;
+
+    
+    top: 0vh;
+    bottom: 0vh;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: name 60s infinite;
+    filter:
+    drop-shadow(.07vh .04vh 70vh blue);
+}
+.img {
+    display:inline-block ;
+    width: 50%;
+    height: 50%;
+    transform: rotate(-30deg);
+    margin: 10vh auto;
+
+    transition: .3s ease-in-out;
+}
+.img:hover {
+    filter:
+    drop-shadow(.01vh .01vh 10vh rgb(175, 175, 175) )
+}
+.white_block {
+    width: 600px;
+    height: 350px;
+    position:fixed;
+    top:35%;
+    right:12vh;
+    z-index: -1;
+    border: 7px solid rgb(133, 132, 132);
+    box-shadow:5vh 3vh 2vh rgb(0, 0, 0);
+    animation: nev_name 60s infinite;
+
+    background-color:rgb(175, 175, 175);
+}
+.custom-button {
+    background-color: black;
+    color:#fff;
+    padding: 5% 20%;
+    margin-top: 1%;
+    border-radius: 5% ;
+    cursor: pointer;
+    font-size: 50%;
+    text-decoration: none;
+
+    transition: .3s ease-in-out;
+}
+.custom-button:hover {
+    padding: 5.5% 22%;
+}
+.text_in_block {
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+#ph {
+    font-weight: 400%;
+    margin: 5% auto;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10% ;
+    user-select: none;
+    background-color: black;
+    width: 100%;
+    height: 16vh;
+}
+.header__inner.scrolled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10% ;
+    user-select: none;
+    background-color: black;
+    width: 100%;
+    height: 16vh;
+}
+.logo {
+    margin-top: 0%;
+    margin-left: 3%;
+    font-size: 5em;
+    font-weight: 700;
+    color: #fff;
+}
+.nav {
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+.nav__a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 11vh;
+    color: black;
+    text-decoration: none;
+    border-bottom: .3vh solid transparent;
+
+    transition: color .2s linear ;
+    border-color: .2s linear;
+}
+.nav__a:hover {
+    color:blueviolet;
+    border-bottom:.3vh solid blueviolet ;
+
+}
+.sup_text {
+    font-size: 35px;
+    color: rgb(70, 219, 70);
+    text-shadow: 
+        -0.5px -1px 0 #000, 
+        .5px -1px 0 #000,  
+        -0.5px 1px 0 #000,  
+        .5px 1px 0 #000;   
+}
+.efects {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("assets/6vy5wsj60v361.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10em);
+    filter:drop-shadow(0px 25px 400px #1c2e20);
+}
+.efects_text {
+    font-size: 5vw;
+}
+.img_dist {
+    display: fixed;
+
+    text-shadow: 
+    -2px -1px 0 #db6a00, 
+    2px -1px 0 #db6a00,  
+    2px 1px 0 #db6a00,  
+    2px 1px 0 #db6a00;
+}
+.img_distortion {
+    max-width: 25%;
+    height: auto;
+    position: absolute;
+    top: 6vw;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    margin: 10vw;
+    
+
+    filter:drop-shadow(0px 10px 15px #522e0c);
+}
+.img_text {
+    position:flex;
+    max-width: 64%;
+    text-align:center;
+    margin-right: 19vw;
+    margin-left: 1vw;
+    font-size: 3vw;
+    background-color: #000;
+    border-radius: 10%;
+}
+.slider {
+    display: inline-block;
+
+}
+.slider__item {
+    width: 24%;
+
+    font-size: 200%;
+    text-align: center;
+    text-decoration: overline;
+}
+.section {
+    padding: 8vh 0;
+    background-image: url("assets/tmb_37229_5639.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.catalog {
+    width: 100%;
+    margin-top: 80vh;
+    font-size: 2vw;
+    text-align: center;
+    justify-content:space-between ;
+}
+.text__catalog {
+    font-size: 500%;
+    margin-top: 10vw
+}
+.img_drive {
+    display:fixed;
+
+}
+.img_overdrive {
+    max-width: 26%;
+    height: auto;
+    position: absolute;
+    top: 50vw;
+    right: 60%;
+    left: 0;
+    bottom: 0;
+    margin: 6vw;
+
+    filter:drop-shadow(0px 10px 10px #f3d83f);
+}
+
+@keyframes name {
+    0%{
+        filter:drop-shadow(.07vh .04vh 90vh  #35577c);
+        background-image: url("assets/kombik_guitar-6.png");
+    }
+    33%{
+        filter:drop-shadow(.07vh .04vh 70vh #54483a);
+        background-image: url("assets/45ba841f92124e9abd2695cdd60f.jpg");
+    }
+    66%{
+        filter:drop-shadow(.07vh .04vh 70vh white);
+        background-image: url("assets/dsc-9442.jpg");
+    }
+    100% {
+        filter:drop-shadow(.07vh .04vh 90vh #35577c);
+        background-image: url("assets/kombik_guitar-6.png");
+    }
+}
